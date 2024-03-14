@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"spr_front","path":"sprites/spr_front/spr_front.yy",},},
+    {"id":{"name":"spr_back","path":"sprites/spr_back/spr_back.yy",},},
     {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

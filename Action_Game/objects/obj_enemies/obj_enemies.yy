@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_flence",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_enemies",
+  "eventList":[],
   "managed":true,
-  "name":"obj_flence",
+  "name":"obj_enemies",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_front",
-    "path":"sprites/spr_front/spr_front.yy",
+    "name":"spr_Enemy",
+    "path":"sprites/spr_Enemy/spr_Enemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

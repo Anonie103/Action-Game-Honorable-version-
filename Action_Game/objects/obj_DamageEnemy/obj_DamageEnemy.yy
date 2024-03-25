@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_flenceBullet",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_DamageEnemy",
+  "eventList":[],
   "managed":true,
-  "name":"obj_flenceBullet",
+  "name":"obj_DamageEnemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_DamageEnemy",
-    "path":"objects/obj_DamageEnemy/obj_DamageEnemy.yy",
+    "name":"oDamageParent",
+    "path":"objects/oDamageParent/oDamageParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_flenceBullet",
-    "path":"sprites/spr_flenceBullet/spr_flenceBullet.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

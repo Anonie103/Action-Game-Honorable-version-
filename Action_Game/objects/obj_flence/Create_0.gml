@@ -20,7 +20,7 @@ sprite[3] = spr_front;
 
 //weapon info 
     shootTimer =0;
-	shootCooldown = 9;
+	shootCooldown = 6;
 
    bulletObj = obj_flenceBullet;
    weaponLength = sprite_get_bbox_right(spr_pewpew) - sprite_get_xoffset(spr_pewpew);

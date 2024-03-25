@@ -1,3 +1,5 @@
+event_inherited();
+
 dir = 0;
 spd = 8;
 xspd = 0;

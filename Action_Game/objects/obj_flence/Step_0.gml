@@ -1,9 +1,11 @@
-// get inputs 
-rightKey = keyboard_check(ord("D"));
-leftKey = keyboard_check(ord("A"));
-upKey = keyboard_check(ord("W"));
-downKey = keyboard_check(ord("S"));
-shootKey = mouse_check_button(mb_left);
+// get input
+rightKey = global.rightKey
+leftKey = global.leftKey
+upKey = global.upKey
+downKey = global.downKey
+shootKey = global.shootKey
+
+
 
 //player movements 
 #region
@@ -80,7 +82,8 @@ if shootKey && shootTimer <= 0
 	 var _xOffset = lengthdir_x(weaponLength + weaponOffestDist, aimDir);
 	 var _yOffset = lengthdir_y(weaponLength + weaponOffestDist, aimDir)
 	 var _bulletInst = instance_create_depth( x + _xOffset, centerY + _yOffset, depth-100, bulletObj );
-	audio_play_sound(Gun,5,false);
+		//gun shot sound
+		audio_play_sound(Gun,5,false);
 	//change bullet direction
 	with (_bulletInst)
 	
@@ -92,6 +95,11 @@ if shootKey && shootTimer <= 0
 //death / game over 
 if hp <= 0 
 {
+//create the game over object 
+instance_create_depth(0,0,-1000, GameOver);
+ // sprite 
+ instance_create_depth(x,y,depth,spr_flenceDeath)
+
  instance_destroy();
   
 }

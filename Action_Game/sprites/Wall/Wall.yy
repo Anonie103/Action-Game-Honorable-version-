@@ -19,7 +19,7 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"38947693-ad7c-46c5-aa97-4e21a6682678","blendMode":0,"displayName":"default","isLocked":false,"name":"38947693-ad7c-46c5-aa97-4e21a6682678","opacity":39.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"38947693-ad7c-46c5-aa97-4e21a6682678","blendMode":0,"displayName":"default","isLocked":false,"name":"38947693-ad7c-46c5-aa97-4e21a6682678","opacity":5.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Wall",
   "nineSlice":null,

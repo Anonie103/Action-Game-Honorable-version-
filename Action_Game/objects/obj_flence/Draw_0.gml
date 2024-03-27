@@ -14,6 +14,6 @@ draw_self();
  }
  
 
-//draw hp over player
-draw_text(x+20,y,string(hp));
-
+var _healthPercent = hp / maxHp;
+var _hpImage = _healthPercent * (sprite_get_number (spr_PlayerHealthBar) -1)
+draw_sprite (spr_PlayerHealthBar, _hpImage, x, y - sprite_height - 1);

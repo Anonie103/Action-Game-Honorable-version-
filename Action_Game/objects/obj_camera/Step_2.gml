@@ -11,6 +11,40 @@ if instance_exists(obj_flence)
 	y = obj_flence.centerY - _camH/2;
 }
 
+
+// camera shaking
+if  global.shootKey 
+{ 
+	xShakeAmount = 9
+	yShakeAmount = 8
+}
+  //x shake
+ if  xShakeAmount > 0 
+ {
+	 xShakeDir += xShakeDirSpd;
+	 xShakeAmount -= xShakeAmountSpd;
+ } else { 
+	 xShakeAmount = 0;
+	 xShakeDir = 0;
+ }
+  
+  xShake = dsin ( xShakeDir ) * xShakeAmount;
+ // y
+ if  yShakeAmount > 0 
+ {
+	 yShakeDir += yShakeDirSpd;
+	 yShakeAmount -= yShakeAmountSpd;
+ } else { 
+	 yShakeAmount = 0;
+	 yShakeDir = 0;
+ }
+  
+  yShake = dsin ( yShakeDir ) * yShakeAmount;
+  
+  // add camera shake 
+  x += xShake;
+  y += yShake;
+
 //clamp cam position to room borders
 x = clamp (x,0,room_width -_camW)
  y= clamp (y,0,room_height -_camH)

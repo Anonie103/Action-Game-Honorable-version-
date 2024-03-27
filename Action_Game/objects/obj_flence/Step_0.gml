@@ -41,6 +41,8 @@ shootKey = mouse_check_button(mb_left);
   
  #endregion 
 
+//get damaged
+get_damaged(oDamagePlayer, true); 
 
 //sprite control 
 #region
@@ -66,7 +68,7 @@ aimDir = point_direction(x, centerY, mouse_x, mouse_y);
   #endregion
 
 
-//shoo the weapon 
+//shoot the weapon 
 if shootTimer > 0 {shootTimer --;};
 if shootKey && shootTimer <= 0
 {
@@ -80,7 +82,9 @@ if shootKey && shootTimer <= 0
 	
 	//change bullet direction
 	with (_bulletInst)
+	
 	{
 		dir = other.aimDir;
 	}
 }
+

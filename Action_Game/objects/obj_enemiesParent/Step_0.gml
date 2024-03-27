@@ -1,21 +1,12 @@
 //recieve damage 
-if place_meeting (x, y, obj_DamageEnemy)
-{
-	var _inst = instance_place(x, y, obj_DamageEnemy);
-	
-	//take damage from specific instance 
-	hp -= _inst.damage; 
-	
-	//tell the damage instance to destroy itself 
-	_inst.destroy = true;
-}
-
+get_damaged(obj_DamageEnemy);
 
 //death 
 if hp <= 0
 {
 	instance_destroy();
-}
+	
+	}
 
 //chase the player 
     dir = point_direction(x, y, obj_flence.x, obj_flence.y);

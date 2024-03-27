@@ -8,3 +8,4 @@ yspd = 0;
 //clean up
 maxDist = 1000;
 destroy = false;
+enemyDestroy = false;

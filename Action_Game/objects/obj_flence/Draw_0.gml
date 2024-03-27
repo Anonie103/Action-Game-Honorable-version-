@@ -12,3 +12,7 @@ draw_self();
  {
     draw_my_weapon();
  }
+ 
+
+//draw hp over player
+draw_text(x+20,y,string(hp));

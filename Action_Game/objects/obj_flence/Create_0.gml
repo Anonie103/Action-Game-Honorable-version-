@@ -1,6 +1,9 @@
+//Damage setup
+get_damage_create(20, true);
+
 //variables for movements
 moveDir = 0;
-moveSpd = 8;
+moveSpd = 11;
 xspd = 0;
 yspd = 0;
 
@@ -24,3 +27,5 @@ sprite[3] = spr_front;
 
    bulletObj = obj_flenceBullet;
    weaponLength = sprite_get_bbox_right(spr_pewpew) - sprite_get_xoffset(spr_pewpew);
+
+audio_play_sound(Rock,20,true);

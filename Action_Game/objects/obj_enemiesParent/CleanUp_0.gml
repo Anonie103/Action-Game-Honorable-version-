@@ -1,1 +1,1 @@
-get_damage_cleaup();
+get_damage_cleaup()

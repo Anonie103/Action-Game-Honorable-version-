@@ -44,6 +44,7 @@ shootKey = mouse_check_button(mb_left);
 //get damaged
 get_damaged(oDamagePlayer, true); 
 
+
 //sprite control 
 #region
 //player aiming 
@@ -79,7 +80,7 @@ if shootKey && shootTimer <= 0
 	 var _xOffset = lengthdir_x(weaponLength + weaponOffestDist, aimDir);
 	 var _yOffset = lengthdir_y(weaponLength + weaponOffestDist, aimDir)
 	 var _bulletInst = instance_create_depth( x + _xOffset, centerY + _yOffset, depth-100, bulletObj );
-	
+	audio_play_sound(Gun,5,false);
 	//change bullet direction
 	with (_bulletInst)
 	
@@ -88,3 +89,9 @@ if shootKey && shootTimer <= 0
 	}
 }
 
+//death / game over 
+if hp <= 0 
+{
+ instance_destroy();
+  
+}

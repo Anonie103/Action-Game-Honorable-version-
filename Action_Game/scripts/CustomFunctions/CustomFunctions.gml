@@ -20,6 +20,7 @@ draw_sprite_ext(spr_pewpew, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl,
   //damage create event 
   function get_damage_create(_hp = 10, _iframes = false)
   {
+	   maxHp = _hp;
 		hp = _hp;
 		
 		//get the iframes 
@@ -63,7 +64,11 @@ ds_list_destroy(damageList);
 			   image_alpha = 1;
 		   }
 		 }   
-		   exit;
+		 
+		  // clamp hp
+            hp = clamp(hp ,0 ,maxHp);
+		 
+		 exit;
 	  }
 	   //make sure the blinking iframe stops 
 	   if _iframes == true
@@ -135,4 +140,7 @@ ds_list_destroy(damageList);
 	    }
      }
    }
+   
+   // clamp hp
+    hp = clamp(hp,0,maxHp);
  }

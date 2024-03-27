@@ -16,3 +16,4 @@ draw_self();
 
 //draw hp over player
 draw_text(x+20,y,string(hp));
+
